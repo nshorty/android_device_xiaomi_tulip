@@ -84,6 +84,10 @@ PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 endif
 
+# Adapt Launch 
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/lm/AdaptLaunchFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AdaptLaunchFeature.xml
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
